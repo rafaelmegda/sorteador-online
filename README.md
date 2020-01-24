@@ -1,4 +1,4 @@
-# Sistema para sorteio Online 
+# Sistema para sorteio Online (Ainda em desenvolvimento)
 
 Desenvolvido para sorteio online para eventos. 
 
