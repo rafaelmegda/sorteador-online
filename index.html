@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sorteio Online</title>
+  </head>
+  <body>
+    <h4>Faça seu sorteio Onlline</h4>
+
+    <div class="container" id="sorteio">
+      <label>Numero Inicial: </label
+      ><input type="text" id="numero-inicial" placeholder="Digite aqui de 1" />
+
+      <label>Numero Final: </label
+      ><input type="text" id="numero-final" placeholder="até 1000" />
+
+      <button type="button" onclick="sortear()">Sortear</button>
+      <div id="resultado">
+        <h3>Numero Sorteado:</h3>
+        <div id="sorteado">
+          XXXX
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function sortear() {
+        // let NumerosSortear = [];
+        // let VetorSorteados = [];
+        // let max = 1000;
+
+        let numInicial = parseInt(
+          document.getElementById("numero-inicial").value,
+          10
+        );
+        let numFinal = parseInt(
+          document.getElementById("numero-final").value,
+          10
+        );
+
+        // for (var c = 0; c < numFinal; c++) {
+        //   var add = +c + 1;
+        //   var numerosParaSorteio = NumerosSortear.push(add);
+        // }
+
+        // console.log("Numeros para Sortear", NumerosSortear);
+
+        let sorteio = Math.floor(Math.random() * (numFinal - numInicial));
+
+        document.getElementById("sorteado").innerHTML = sorteio;
+        console.log("Numero sorteado: ", sorteio);
+      }
+    </script>
+  </body>
+</html>
