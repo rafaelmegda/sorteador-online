@@ -1,11 +1,12 @@
-# Sistema para sorteio Online (Ainda em desenvolvimento)
+# Sistema para sorteio em eventos personalizavel (Ainda em desenvolvimento)
 
-Desenvolvido para sorteio online para eventos. 
+Este sistema tem o objetivo de auxiliar nos sorteios ao vivo durante os eventos. Hoje os sorteadores online não oferecem a opção de personalizar a página de acordo com sua necessidade e evento, sem contar que muitos tem uma poluição visual muito grande com propagandas.
 
-* Ainda em desenvolvimento, o objetivo é disponibilizar para sorteio de forma gratuito, com algoritmo rápido, sem comerciais e que
-não repita os numeros.
+* Personalizar com as cores e com o banner do seu evento
 
-* Muitos sorteadores são poluidos visualmente com propagandas e demoram para sortear os numeros.
+* Sortear até 100.000 sem repetição
 
-* Na página será possivel que o usuário personalize com a logo do seu evento/festa e irá contar com layout personalizavel com cores de fundo
-e letras.
+* Evitar o "travamento" durante o sorteio.
+
+
+# Ainda em desenvolvimento, em breve irei disponibilizar o link para acessar e utilizar o sorteador personalizavel.
