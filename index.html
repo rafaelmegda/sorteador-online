@@ -5,31 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sorteio Online</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
   </head>
   <body>
-    <h4>Faça seu sorteio Onlline</h4>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h2>Faça seu sorteio Online</h2>
+      </div>
+      
+      <div class="container-fluid">
+        <p>Um sorteador sem propaganda! E logo você poderá personaliza-lo de acordo com seu evento!!</p>
+      </div>
+      
+      <div class="container-fluid" id="sorteio">
+        <label>Numero Inicial: </label>
+        <input type="text" id="numero-inicial" placeholder="Digite aqui de 1" />
 
-    <div class="container" id="sorteio">
-      <label>Numero Inicial: </label
-      ><input type="text" id="numero-inicial" placeholder="Digite aqui de 1" />
+        <label>Numero Final: </label>
+        <input type="text" id="numero-final" placeholder="até 1000" />
 
-      <label>Numero Final: </label
-      ><input type="text" id="numero-final" placeholder="até 1000" />
+        <button type="button" onclick="sortear()">Sortear</button>
+      </div>  
 
-      <button type="button" onclick="sortear()">Sortear</button>
-      <div id="resultado">
+      <div class="container-fluid" id="resultado">
         <h3>Numero Sorteado:</h3>
         <div id="sorteado">
-          XXXX
+          Resultados
         </div>
       </div>
     </div>
 
     <script>
+
       function sortear() {
-        // let NumerosSortear = [];
-        // let VetorSorteados = [];
-        // let max = 1000;
 
         let numInicial = parseInt(
           document.getElementById("numero-inicial").value,
@@ -40,14 +53,7 @@
           10
         );
 
-        // for (var c = 0; c < numFinal; c++) {
-        //   var add = +c + 1;
-        //   var numerosParaSorteio = NumerosSortear.push(add);
-        // }
-
-        // console.log("Numeros para Sortear", NumerosSortear);
-
-        let sorteio = Math.floor(Math.random() * (numFinal - numInicial));
+        let sorteio = Math.round(Math.random() * (numFinal - numInicial)+1);
 
         document.getElementById("sorteado").innerHTML = sorteio;
         console.log("Numero sorteado: ", sorteio);
