@@ -4,7 +4,7 @@ Este sistema tem o objetivo de auxiliar nos sorteios ao vivo durante os eventos.
 
 * Personalizar com as cores e com o banner do seu evento
 
-* Sortear até 100.000 sem repetição
+* Sortear até 1.000 sem repetição
 
 * Evitar o "travamento" durante o sorteio.
 
