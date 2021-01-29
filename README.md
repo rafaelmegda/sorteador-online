@@ -11,4 +11,6 @@ Este sistema tem o objetivo de auxiliar nos sorteios ao vivo durante os eventos.
 * Evitar o "travamento" durante o sorteio.
 
 
-# Ainda em desenvolvimento, em breve irei disponibilizar o link para acessar e utilizar o sorteador personalizavel.
+# Novas versões
+
+O projeto ainda recebera novas versões para corrigir bugs e permitir que o usuário personalize sua página de acordo com seu evento.
